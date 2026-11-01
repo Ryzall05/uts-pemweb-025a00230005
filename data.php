@@ -1,4 +1,6 @@
 <?php
+
+$namaWeb = "Apocalypse Cinema Database (ACDB)";
 // data.php berisi array multidimensi data film
 
 $films = [
@@ -18,7 +20,7 @@ $films = [
         "id" => 2,
         "judul" => "World War Z",
         "tahun" => 2013,
-        "genre" => "Action, Adventure, Sci-Fi",
+        "genre" => "Action, Adventure",
         "tipe" => "Movie",
         "durasi" => "116m",
         "rating" => 8.0,
@@ -114,7 +116,7 @@ $films = [
         "id" => 10,
         "judul" => "#Alive",
         "tahun" => 2020,
-        "genre" => "Action, Drama, Survival",
+        "genre" => "Action, Drama",
         "tipe" => "Movie",
         "durasi" => "98m",
         "rating" => 8.1,
