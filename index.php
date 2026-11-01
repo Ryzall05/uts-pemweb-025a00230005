@@ -1,6 +1,16 @@
 <?php
 declare(strict_types=1);
+// Load data film & fungsi logika
+require __DIR__ . "/data.php";
+require __DIR__ . "/functions.php";
+
+$totalFilm = getTotalFilm($films);
+$totalPenonton = getTotalPenonton($films);
+$rataRating = getRataRataRating($films);
+$totalMovie = getTotalMovie($films);
+$totalSeries = getTotalSeries($films);
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -12,7 +22,7 @@ declare(strict_types=1);
 <body>
     <header>
         <div class="header-container">
-            <h1 class="logo">Apocalypse Cinema Database (ACBD)</h1>
+            <h1 class="logo">Apocalypse Cinema Database (ACDB)</h1>
             <nav>
                 <ul>
                     <li><a href="index.php" class="active">Beranda & Profil</a></li>
@@ -24,14 +34,18 @@ declare(strict_types=1);
     <main class="container">
         <section class="profile-section">
             <h2>Tentang ACDB</h2>
-            <p>Selamat datang di Apocalypse Cinema Database (ACBD), sebuah platform yang didedikasikan untuk penggemar film zombie dan apokalips. Di sini, Anda dapat menemukan berbagai informasi tentang film-film terbaik dalam genre ini, termasuk sinopsis, ulasan, dan rating dari para penggemar.</p>
-            <p>ACBD bertujuan untuk menjadi sumber informasi yang lengkap dan terpercaya bagi komunitas pecinta film zombie dan apokalips. Kami berkomitmen untuk terus memperbarui koleksi film kami dan menyediakan konten yang relevan bagi para pengunjung.</p>
-            
-            <div class="profile-card">
-                <h3>Tentang Saya</h3>
-                <p><strong>Nama:</strong> Ahmad Fahrizal</p>
-                <p><strong>Status:</strong> Mahasiswa S1 Informatika</p>
-            </div>
+            <p>
+                Selamat datang di <strong>Apocalypse Cinema Database (ACDB)</strong>, sebuah platform katalog dinamis berbasis PHP murni yang menyajikan pustaka data film bergenre horor, thriller, dan apokalips zombie. Seluruh koleksi, rating, serta statistik dalam web ini dikurasi secara langsung berdasarkan pengalaman pribadi pembuat sebagai penikmat film bertema <em>survival horror</em>.
+            </p>
+            <p>
+                ACDB hadir sebagai wadah informasi yang praktis dan interaktif untuk memberikan rekomendasi terbaik, memudahkan sesama pecinta film apokalips zombie dalam menjelajahi daftar koleksi, serta melihat detail lengkap mulai dari tahun rilis, durasi, hingga statistik tontonan.
+            </p>        
+        </section>
+        <section class="profile-card">
+            <h3>Tentang Pembuat Web</h3>
+            <p><strong>Nama:</strong> Ahmad Fahrizal</p>
+            <p><strong>Status:</strong> Mahasiswa S1 Informatika</p>
+            <p><strong>Universitas:</strong> Tiga Serangkai University</p>
         </section>
     </main>
     <footer>

@@ -64,7 +64,7 @@ nav a:active {
     border-radius: 0px;
     margin-top: 20px;
     margin-bottom: 30px
-    vorder l
+    
 }
 
 .summary-section h2 {
@@ -121,7 +121,8 @@ nav a:active {
 .badge-rating {
     top: 10px;
     left: 10px;
-    background-color: rgba(0, 0, 0, 0,75);
+    background-color: #1e1e1eb3;
+    color: #FFD700;
 }
 
 .badge-type {
@@ -158,4 +159,29 @@ footer {
     color: #777;
     font-size: 0.85rem;
     border-top: 1px solid #333;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-katalog {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #1e1e1e;
+    color: #777;
+    font-size: 0.85rem;
+    border-top: 1px solid #333;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+.profile-card {
+  bottom: 80px;
+  position: fixed;
+  padding: 20px;
+  background-color: #1a1a1a; /* Background kotak tipis */
+  border-radius: 8px;
+  border: 1px solid #333;
 }
