@@ -2,17 +2,20 @@
 
 declare(strict_types=1);
 
-function e(string $teks): string {
+function e(string $teks): string 
+{
     return htmlspecialchars($teks, ENT_QUOTES, 'UTF-8');
 }
 
 // Hitung total Film
-function getTotalFilm(array $data): int {
+function getTotalFilm(array $data): int 
+{
     return count($data);
 }
 
 // Hitung total Penonton
-function getTotalPenonton(array $data): int {
+function getTotalPenonton(array $data): int 
+{
     $total = 0;
     foreach ($data as $film) {
         $total += $film['penonton'];
@@ -21,9 +24,12 @@ function getTotalPenonton(array $data): int {
 }
 
 // Hitung rata rata Rating
-function getRataRataRating(array $data): float {
-    if (count($data) === 0) return 0.0;
-
+function getRataRataRating(array $data): float 
+{
+    if (count($data) === 0) {
+        return 0.0;
+    }
+        
     $totalRating = 0;
     foreach ($data as $film) {
         $totalRating += $film['rating'];
@@ -32,7 +38,8 @@ function getRataRataRating(array $data): float {
 }
 
 // Hitung Jumlah Movie
-function getTotalMovie(array $data): int {
+function getTotalMovie(array $data): int 
+{
     $count = 0;
     foreach ($data as $film) {
         if ($film['tipe'] === 'Movie') {
@@ -43,7 +50,8 @@ function getTotalMovie(array $data): int {
 }
 
 // Hitung Jumlah Series
-function getTotalSeries(array $data): int {
+function getTotalSeries(array $data): int 
+{
     $count = 0;
     foreach ($data as $film) {
         if ($film['tipe'] === 'Series') {

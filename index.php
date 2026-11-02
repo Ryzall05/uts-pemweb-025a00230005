@@ -39,9 +39,9 @@ $totalSeries = getTotalSeries($films);
             </p>
             <p>
                 ACDB hadir sebagai wadah informasi yang praktis dan interaktif untuk memberikan rekomendasi terbaik, memudahkan sesama pecinta film apokalips zombie dalam menjelajahi daftar koleksi, serta melihat detail lengkap mulai dari tahun rilis, durasi, hingga statistik tontonan.
-            </p>        
+            </p>
+            <a class="button-catalog" href="film.php"><h3>Lihat Catalog Film</h3></a>
         </section>
-        <a class="button-catalog" href="film.php"><h3>Lihat Catalog Film</h3></a>
         <section class="summary-section">
             <h2>Ringkasan Koleksi</h2>
             <div class="stats-grid">
