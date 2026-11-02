@@ -185,7 +185,7 @@ footer {
     font-size: 0.85rem;
     border-top: 1px solid #333;
     bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;
 }
 
@@ -203,8 +203,8 @@ footer {
 }
 
 .profile-card {
-    bottom: 80px;
-    position: fixed;
+    position: relative;
+    margin-top: 30px;
     padding: 20px;
     background-color: #1a1a1a; 
     border-radius: 8px;
@@ -221,6 +221,24 @@ footer {
     display: inline-block; 
     text-decoration: none; 
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
 }
 
 .button-catalog:hover {
