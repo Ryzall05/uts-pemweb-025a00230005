@@ -16,7 +16,7 @@ $totalSeries = getTotalSeries($films);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil - Apocalypse Cinema Database</title>
+    <title>Profil - <?= $namaWeb ?></title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,8 +41,30 @@ $totalSeries = getTotalSeries($films);
                 ACDB hadir sebagai wadah informasi yang praktis dan interaktif untuk memberikan rekomendasi terbaik, memudahkan sesama pecinta film apokalips zombie dalam menjelajahi daftar koleksi, serta melihat detail lengkap mulai dari tahun rilis, durasi, hingga statistik tontonan.
             </p>        
         </section>
+        <a class="button-catalog" href="film.php"><h3>Lihat Catalog Film</h3></a>
+        <section class="summary-section">
+            <h2>Ringkasan Koleksi</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Film</h3>
+                    <p><?= $totalFilm ?> Judul</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Penonton</h3>
+                    <p><?= number_format($totalPenonton, 0, ',', '.') ?></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Rata-Rata Rating</h3>
+                    <p>★ <?= $rataRating ?></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tipe Konten</h3>
+                    <p><?= $totalMovie ?> Movie | <?= $totalSeries ?> Series</p>
+                </div>
+            </div>
+        </section>
         <section class="profile-card">
-            <h3>Tentang Pembuat Web</h3>
+            <h3>Profil Pembuat Web</h3>
             <p><strong>Nama:</strong> Ahmad Fahrizal</p>
             <p><strong>Status:</strong> Mahasiswa S1 Informatika</p>
             <p><strong>Universitas:</strong> Tiga Serangkai University</p>

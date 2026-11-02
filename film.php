@@ -21,6 +21,7 @@ $totalSeries    = getTotalSeries($films);
     <title>Daftar Film - Apocalypse Cinema Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -33,26 +34,30 @@ $totalSeries    = getTotalSeries($films);
             </nav>
         </div>
     </header>
+
     <main class="container">
         <section class="summary-section">
             <h2>Ringkasan Koleksi</h2>
             <div class="stats-grid">
-                <h3>Total Film</h3>
-                <p><?= $totalFilm ?> Judul</p>
-            </div>
-            <div class="stat-card">
-                <h3>Total Penonton</h3>
-                <p><?= number_format($totalPenonton, 0, ',', '.') ?></p>
-            </div>
-            <div class="stat-card">
-                <h3>Rata-Rata Rating</h3>
-                <p>★ <?= $rataRating ?></p>
-            </div>
-            <div class="stat-card">
-                <h3>Tipe Konten</h3>
-                <p><?= $totalMovie ?> Movie | <?= $totalSeries ?> Series</p>
+                <div class="stat-card">
+                    <h3>Total Film</h3>
+                    <p><?= $totalFilm ?> Judul</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Penonton</h3>
+                    <p><?= number_format($totalPenonton, 0, ',', '.') ?></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Rata-Rata Rating</h3>
+                    <p>★ <?= $rataRating ?></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tipe Konten</h3>
+                    <p><?= $totalMovie ?> Movie | <?= $totalSeries ?> Series</p>
+                </div>
             </div>
         </section>
+
         <section class="catalog-section">
             <h2>Film Unggulan Hari Ini</h2>
             <div class="movie-grid">
@@ -76,9 +81,11 @@ $totalSeries    = getTotalSeries($films);
                 <?php endforeach; ?>
             </div>
         </section>
+
     </main>
     <footer class="footer-katalog">
         <p>&copy; 2026 Apocalypse Cinema Database. Proyek UTS Pemrograman Web.</p>
     </footer>
+    
 </body>
 </html>

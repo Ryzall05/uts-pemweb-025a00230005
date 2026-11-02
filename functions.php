@@ -22,7 +22,7 @@ function getTotalPenonton(array $data): int {
 
 // Hitung rata rata Rating
 function getRataRataRating(array $data): float {
-    if (count($data) == 0) return 0.0;
+    if (count($data) === 0) return 0.0;
 
     $totalRating = 0;
     foreach ($data as $film) {

@@ -78,6 +78,31 @@ nav a:active {
     font-size: 0.95rem;
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.stat-card {
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.stat-card h3 {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.stat-card p {
+    color: #e50914;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -140,7 +165,7 @@ nav a:active {
     font-size: 1.1rem;
     color:#ffffff;
     margin-bottom: 8px;
-    white-space: nowarp;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -178,10 +203,29 @@ footer {
 }
 
 .profile-card {
-  bottom: 80px;
-  position: fixed;
-  padding: 20px;
-  background-color: #1a1a1a; /* Background kotak tipis */
-  border-radius: 8px;
-  border: 1px solid #333;
+    bottom: 80px;
+    position: fixed;
+    padding: 20px;
+    background-color: #1a1a1a; 
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.button-catalog {
+    margin-top: 25px;
+    padding: 8px;
+    background-color: #e50914; 
+    border-radius: 5px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    display: inline-block; 
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+.button-catalog:hover {
+    background-color: #b81d24; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+    color: #b3b3b3;
 }
