@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 $namaWeb = "Apocalypse Cinema Database (ACDB)";
 // data.php berisi array multidimensi data film
 
