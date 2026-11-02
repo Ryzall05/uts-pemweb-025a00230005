@@ -35,8 +35,11 @@ Tema yang saya pilih adalah Koleksi Pribadi (film). Judul dari aplikasi web kata
 * `require` & `__DIR__` : Memanggil file modul `data.php` dan `functions.php` secara terstruktur berdasarkan direktori absolut.
 
 ## Tangkapan Layar
-* `screenshots/beranda-profil.png` - Tampilan Halaman Utama / Profil (`index.php`)
-* `screenshots/katalog-film.png` - Tampilan Halaman Katalog & Ringkasan Statistik (`film.php`)
+### Halaman Utama / Profil (`index.php`)
+![Beranda & Profil](screenshots/beranda-profil.png)
+
+### Halaman Katalog & Ringkasan Statistik (`film.php`)
+![Katalog Film](screenshots/katalog-film.png)
 
 ## Sumber Referensi & Catatan AI
 * Referensi desain UI: Antarmuka bertema platform streaming film lk21.de.
