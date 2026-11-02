@@ -42,6 +42,6 @@ Tema yang saya pilih adalah Koleksi Pribadi (film). Judul dari aplikasi web kata
 ![Katalog Film](screenshots/katalog-film.png)
 
 ## Sumber Referensi & Catatan AI
-* Referensi desain UI: Antarmuka bertema platform streaming film lk21.de.
+* Referensi desain UI: Antarmuka bertema platform streaming film terinspirasi dari web  lk21.de.
 * Referensi nama web: Nama platform Apocalyps "Apocalypse Cinema Database (ACDB)" terinspirasi dari platform imdb.com (Internet Movie Database)
 * Pembantu Pengembangan (AI): Menggunakan Gemini AI sebagai teman berdiskusi tentang tampilan css, cara commit git, penyusunan fungsi statistik dan dokumentasi README.
